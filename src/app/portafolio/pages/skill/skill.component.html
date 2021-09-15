@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Skill Set</h1>
+    <mat-divider></mat-divider>
+    <br>
+    <div fxLayout="row wrap" fxLayout.md="row wrap" fxLayout.xs="column" fxLayout.sm="row wrap" fxLayoutAlign="center">
+        <div fxFlex="20" fxFlex.lg="30" fxFlex.sm="30"  *ngFor="let skill of skills" class="card">
+            <app-skill-card [skill]="skill"></app-skill-card>
+        </div>
+    </div>
+</div>

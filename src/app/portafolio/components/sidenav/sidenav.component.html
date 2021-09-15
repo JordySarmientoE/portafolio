@@ -1,0 +1,56 @@
+
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav>
+        <mat-toolbar>
+            <span>Menu</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        <mat-nav-list>
+            <a routerLink="./listado"
+                mat-list-item (click)="sidenav.toggle()" routerLink='/'>
+                <span>Inicio</span>
+            </a>
+            <a routerLink="./agregar"
+                mat-list-item (click)="sidenav.toggle()" routerLink='/skill'>
+                <span>Habilidades</span>
+            </a>
+            <a routerLink="./buscar"
+                mat-list-item (click)="sidenav.toggle()" routerLink='/contact'>
+                <span>Contacto</span>
+            </a>
+            <a 
+                mat-list-item (click)="sidenav.toggle(); downloadPdf()">
+                <span>Descargar CV</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-toolbar>
+        <button mat-icon-button (click)="sidenav.toggle()" fxHide fxShow.xs>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-button routerLink='/'>
+            <b style="font-size: 20px">Jordy Sarmiento</b>
+        </button>
+        <span class="spacer"></span>
+        <div fxShow fxHide.xs>
+            <button mat-button routerLink='/'>
+                Inicio
+            </button>
+            <button mat-button routerLink='/skill'>
+                Habilidades
+            </button>
+            <button mat-button routerLink='/contact'>
+                Contacto
+            </button>
+            <button mat-button (click)="downloadPdf()">
+                Descargar CV
+            </button>
+        </div>
+    </mat-toolbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>

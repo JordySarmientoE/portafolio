@@ -1,0 +1,44 @@
+.container{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../../../../assets/backg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 88vh;
+    z-index: 1 !important;
+}
+
+.container__div{
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 25vh;
+}
+
+.name{
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
