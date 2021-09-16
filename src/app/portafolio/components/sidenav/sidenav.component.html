@@ -9,15 +9,19 @@
             </button>
         </mat-toolbar>
         <mat-nav-list>
-            <a routerLink="./listado"
+            <a
                 mat-list-item (click)="sidenav.toggle()" routerLink='/'>
                 <span>Inicio</span>
             </a>
-            <a routerLink="./agregar"
+            <a 
                 mat-list-item (click)="sidenav.toggle()" routerLink='/skill'>
                 <span>Habilidades</span>
             </a>
-            <a routerLink="./buscar"
+            <a
+                mat-list-item (click)="sidenav.toggle()" routerLink='/proyectos'>
+                <span>Proyectos</span>
+            </a>
+            <a
                 mat-list-item (click)="sidenav.toggle()" routerLink='/contact'>
                 <span>Contacto</span>
             </a>
@@ -41,6 +45,9 @@
             </button>
             <button mat-button routerLink='/skill'>
                 Habilidades
+            </button>
+            <button mat-button routerLink='/proyectos'>
+                Proyectos
             </button>
             <button mat-button routerLink='/contact'>
                 Contacto

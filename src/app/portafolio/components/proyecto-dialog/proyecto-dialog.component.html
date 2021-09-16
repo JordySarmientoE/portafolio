@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{data.nombre}}</h2>
+<mat-divider></mat-divider>
+<br>
+<img mat-card-image [src]="data | imageProyecto" class="image">
+<mat-dialog-content>{{data.descripcion}}</mat-dialog-content>
+<mat-dialog-actions fxLayoutAlign="center" fxLayoutGap="20px">
+    <a [href]="data.url" target="_blank">
+        <button mat-stroked-button color="primary">
+            <i class="fas fa-link"></i>
+        </button>
+    </a>
+    <a [href]="data.github" target="_blank">
+        <button mat-stroked-button color="warn">
+            <i class="fab fa-github"></i>
+        </button>
+    </a>
+</mat-dialog-actions>

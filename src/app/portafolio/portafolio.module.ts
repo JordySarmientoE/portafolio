@@ -10,6 +10,10 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { ImagePipe } from './pipes/image.pipe';
+import { ProyectoCardComponent } from './components/proyecto-card/proyecto-card.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { ImageProyectoPipe } from './pipes/image-proyecto.pipe';
+import { ProyectoDialogComponent } from './components/proyecto-dialog/proyecto-dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { ImagePipe } from './pipes/image.pipe';
     ContactComponent,
     SkillCardComponent,
     ImagePipe,
+    ProyectoCardComponent,
+    ProyectosComponent,
+    ImageProyectoPipe,
+    ProyectoDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +37,9 @@ import { ImagePipe } from './pipes/image.pipe';
   ],
   exports: [
     HomeComponent
+  ],
+  entryComponents: [
+    ProyectoDialogComponent
   ]
 })
 export class PortafolioModule { }

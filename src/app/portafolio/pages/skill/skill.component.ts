@@ -9,7 +9,6 @@ import { SkillService } from '../../services/skill.service';
 export class SkillComponent{
 
   constructor(private skillService: SkillService) { 
-    console.log(this.skills)
   }
 
   get skills(){

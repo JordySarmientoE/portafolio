@@ -1,0 +1,7 @@
+<mat-card class="animate__animated animate__fadeIn">
+    <mat-card-title>{{proyecto.nombre}}</mat-card-title>
+    <div class="container">
+        <img mat-card-image [src]="proyecto | imageProyecto" class="image">
+        <button mat-raised-button color="primary" class="middle" (click)="abrirDialog()">{{proyecto.nombre}}</button>
+    </div>
+</mat-card>

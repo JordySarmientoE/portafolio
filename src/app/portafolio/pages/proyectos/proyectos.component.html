@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Proyectos</h1>
+    <mat-divider></mat-divider>
+    <br>
+    <div fxLayout="row wrap" fxLayout.md="row wrap" fxLayout.xs="column" fxLayout.sm="row wrap" fxLayoutAlign="center">
+        <div fxFlex="20" fxFlex.lg="30" fxFlex.sm="30"  *ngFor="let proyecto of proyectos" class="card">
+            <app-proyecto-card [proyecto]="proyecto"></app-proyecto-card>
+        </div>
+    </div>
+</div>
